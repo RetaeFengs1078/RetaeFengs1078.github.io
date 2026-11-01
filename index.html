@@ -11,38 +11,58 @@
   <meta property="og:title" content="Haifeng Xu">
   <meta property="og:description" content="Research in optimization and machine learning.">
   <meta property="og:url" content="https://retaefengs1078.github.io/">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=20261101">
+  <style>html,body{background:#fff;color:#000;color-scheme:only light}</style>
+  <link rel="stylesheet" href="assets/academic-20261101.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <main id="main">
-    <header id="top">
+  <div class="page" id="top">
+    <header class="profile">
       <h1>Haifeng Xu</h1>
-      <p>I work on optimization and machine learning. I am particularly interested in first-order methods that adapt to unknown problem parameters, and in how gradient history can help train neural networks.</p>
-      <p>I studied Data Science and Big Data Technology at Shanghai University of Finance and Economics (2022–2026). I work with Qi Deng at Shanghai Jiao Tong University and Yinyu Ye at Stanford University.</p>
-      <p class="contact"><a href="mailto:fengs10@outlook.com">fengs10@outlook.com</a><span aria-hidden="true"> &nbsp; / &nbsp; </span><a href="files/Haifeng-Xu-CV.pdf">CV</a></p>
+      <p class="field">Optimization &amp;<br> machine learning</p>
+      <div class="contact">
+        <a class="email" href="mailto:fengs10@outlook.com">fengs10@outlook.com</a>
+        <a class="cv-link" href="files/Haifeng-Xu-CV.pdf">Curriculum vitae <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M4 12 12 4M4 4h8v8"/></svg></a>
+      </div>
+      <nav aria-label="On this page">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+      </nav>
     </header>
 
-    <section id="publications" aria-labelledby="publications-title">
-      <h2 id="publications-title">Publications and preprints</h2>
-      <p class="contribution-note">* Equal contribution</p>
-      <ul class="papers">
-        <li id="paper-hym">
-          <p class="paper-title"><a href="https://arxiv.org/abs/2610.27674">Hybrid Momentum Methods for Optimizing Deep Learning Models</a></p>
-          <p><strong>Haifeng Xu*</strong>, Yijin Ren*, Chenyu Zhou, Qi Deng, Dongdong Ge, Yinyu Ye</p>
-          <p><em>arXiv preprint, 2026.</em></p>
-          <p class="paper-links">[<a href="https://arxiv.org/abs/2610.27674">arXiv</a>] &nbsp; [<a href="https://arxiv.org/pdf/2610.27674">PDF</a>] &nbsp; [<a href="files/hybrid-momentum.bib" download>BibTeX</a>]</p>
-        </li>
-        <li id="paper-agda">
-          <p class="paper-title"><a href="https://openreview.net/forum?id=eLFoTtgCNP">Accelerated Distance-adaptive Methods for Hölder Smooth and Convex Optimization</a></p>
-          <p>Yijin Ren*, <strong>Haifeng Xu*</strong>, Qi Deng</p>
-          <p><em>NeurIPS, 2025.</em></p>
-          <p class="paper-links">[<a href="https://openreview.net/forum?id=eLFoTtgCNP">OpenReview</a>] &nbsp; [<a href="https://openreview.net/pdf?id=eLFoTtgCNP">PDF</a>] &nbsp; [<a href="files/distance-adaptive.bib" download>BibTeX</a>]</p>
-        </li>
-      </ul>
-    </section>
-    <footer>Last updated: November 2026.</footer>
-  </main>
+    <main id="main">
+      <section id="about" class="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p class="intro">I work on <strong>optimization</strong> and <strong>machine learning</strong>, with a focus on adaptive first-order methods and optimizers for neural networks.</p>
+        <p>I am interested in how optimization methods can adapt to unknown problem parameters, and how <strong>gradient history</strong> can help us train neural networks.</p>
+        <p>I studied Data Science and Big Data Technology at Shanghai University of Finance and Economics (2022–2026). I work with <span class="person">Qi Deng</span> at Shanghai Jiao Tong University and <span class="person">Yinyu Ye</span> at Stanford University.</p>
+      </section>
+
+      <section id="publications" class="publications" aria-labelledby="publications-title">
+        <div class="section-heading">
+          <h2 id="publications-title">Publications</h2>
+          <p class="contribution-note">* Equal contribution</p>
+        </div>
+        <ol class="papers">
+          <li id="paper-hym">
+            <div class="paper-meta"><span class="venue preprint">arXiv preprint</span><time datetime="2026">2026</time></div>
+            <h3><a href="https://arxiv.org/abs/2610.27674">Hybrid Momentum Methods for Optimizing Deep Learning Models</a></h3>
+            <p class="authors"><strong>Haifeng Xu*</strong>, Yijin Ren*, Chenyu Zhou, Qi Deng, Dongdong Ge, Yinyu Ye</p>
+            <p class="finding">We found that <strong>old gradients can remain useful thousands of steps later</strong>, motivating optimizers that retain longer gradient history.</p>
+            <div class="paper-links"><a href="https://arxiv.org/abs/2610.27674">arXiv</a><a href="https://arxiv.org/pdf/2610.27674">PDF</a><a href="files/hybrid-momentum.bib" download>BibTeX</a></div>
+          </li>
+          <li id="paper-agda">
+            <div class="paper-meta"><span class="venue published">NeurIPS 2025</span><time datetime="2025">2025</time></div>
+            <h3><a href="https://openreview.net/forum?id=eLFoTtgCNP">Accelerated Distance-adaptive Methods for Hölder Smooth and Convex Optimization</a></h3>
+            <p class="authors">Yijin Ren*, <strong>Haifeng Xu*</strong>, Qi Deng</p>
+            <p class="finding">We developed accelerated methods with <strong>anytime convergence guarantees</strong>, without prior smoothness parameters or a prescribed target accuracy.</p>
+            <div class="paper-links"><a href="https://openreview.net/forum?id=eLFoTtgCNP">OpenReview</a><a href="https://openreview.net/pdf?id=eLFoTtgCNP">PDF</a><a href="files/distance-adaptive.bib" download>BibTeX</a></div>
+          </li>
+        </ol>
+      </section>
+      <footer>Last updated November 2026</footer>
+    </main>
+  </div>
 </body>
 </html>
